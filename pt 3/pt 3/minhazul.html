@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhazul Hasan Chowdhury</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>Minhazul Hasan Chowdhury</h1>
+        <figure>
+            <img src="img/logo.png" alt="Logo of Minhazul Hasan Chowdhury" width="100" height="120">
+        </figure>
+    </header>
+
+    <nav>
+        <button class="nav-toggle" aria-expanded="false">Menu</button>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <aside class="left-section">
+                <h2>Latest News</h2>
+                <p>Welcome to my personal website! Here you'll find the latest updates about my projects, skills, and experiences.</p>
+                <iframe src="https://www.youtube.com/embed/B5PZgWnfGyY" title="Basics of Roofing" allowfullscreen style="width: 100%; height: 315px; border: none; border-radius: 8px;"></iframe>
+            </aside>
+
+            <div class="main-section">
+                <article id="skills">
+                    <h3>Skills</h3>
+                    <button onclick="toggleDetails('skills')" aria-expanded="false">Show More</button>
+                    <div id="skillsDetails" class="details" style="display: none;">
+                        <ul>
+                            <li>Dedicated and highly motivated student.</li>
+                            <li>Learning web development, particularly with HTML, CSS, and JavaScript</li>
+                            <li>Strong skills in project management and teamwork</li>
+                            <li>Capable of creating responsive, user-friendly websites</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="experience">
+                    <h3>Experience</h3>
+                    <button onclick="toggleDetails('experience')" aria-expanded="false">Show More</button>
+                    <div id="experienceDetails" class="details" style="display: none;">
+                        <ul>
+                            <li>Handled customer inquiries and provided detailed service reports</li>
+                            <li>Managed small teams to complete roofing projects on time</li>
+                            <li>Gained hands-on experience with various roofing materials</li>
+                            <li>Ensured adherence to safety protocols</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <section id="education">
+                    <h3>Education</h3>
+                    <button onclick="toggleDetails('education')" aria-expanded="false">Show More</button>
+                    <div id="educationDetails" class="details" style="display: none;">
+                        <ul>
+                            <li>Nelson Mandela High School, Calgary, AB (June 2019)</li>
+                            <li>Currently attending CDI College for Web Development</li>
+                            <li>Courses include advanced web development, database management, and UI/UX design</li>
+                            <li>Expected graduation: 2025</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="hobbies">
+                    <h3>Hobbies</h3>
+                    <button onclick="toggleDetails('hobbies')" aria-expanded="false">Show More</button>
+                    <div id="hobbiesDetails" class="details" style="display: none;">
+                        <ul>
+                            <li>Coding and exploring new technologies</li>
+                            <li>Playing guitar and composing music</li>
+                            <li>Investing in different cryptocurrencies</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h3>Projects</h3>
+                    <table class="project-table">
+                        <caption>So far I've had the pleasure of hands-on experience in different types of work environments.</caption>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Locations</th>
+                                <th>Job</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>(2022)-(2023)</td>
+                                <td>Grant Macewan Elementary School</td>
+                                <td>Singles, General Labour</td>
+                                <td>2 months</td>
+                            </tr>
+                            <tr>
+                                <td>(2022)-(2023)</td>
+                                <td>Calgary Stock Exchange</td>
+                                <td>General Labourer</td>
+                                <td>4 months</td>
+                            </tr>
+                            <tr>
+                                <td>(2023)-(2024)</td>
+                                <td>Westin Housing Group</td>
+                                <td>Roofing and Fence Installation</td>
+                                <td>6 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="contact">
+                    <h3>Contact</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Message me!"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minhazul Hasan Chowdhury. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/m-c-477340316/" target="_blank" rel="noopener noreferrer">
+            <img src="img/linkedinlogo.png" alt="LinkedIn Logo" width="30" height="30">
+        </a>
+        <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer"></a>
+            <img src="img/fblogo.png" alt="facebook Logo" width="30" height="30">
+        </a>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(`${id}Details`);
+            details.style.display = details.style.display === "none" ? "block" : "none";
+        }
+
+        const navToggle = document.querySelector(".nav-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navToggle.addEventListener("click", () => {
+            const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+            navToggle.setAttribute("aria-expanded", !isExpanded);
+            navMenu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
